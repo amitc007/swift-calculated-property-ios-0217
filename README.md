@@ -117,30 +117,32 @@ class Student {
 Now from the AppDelegate we can initialize an instance of our `Student` class with the necessary values and access (print, in this case) the `fullName` property just like the class's other properties:
 
 ```swift
-let mark = Student(username: "markedwardmurray", firstName: "Mark", lastName: "Murray")
+let susan = Student(username: "susanmarielovaglio", firstName: "Susan", lastName: "Lovaglio")
         
-print(mark.fullName)
+print(susan.fullName)
 ```
-This will print: `Mark Murray`
+This will print: `Susan Lovaglio`
 
 If we change the state of the underlying properties that are used for the calculated property, the changes will be automatically reflected in the result of accessing the calculated property:
 
 ```swift
-let mark = Student(username: "markedwardmurray", firstName: "Mark", lastName: "Murray")
+let susan = Student(username: "susanmarielovaglio", firstName: "Susan", lastName: "Lovaglio")
         
-print(mark.fullName)
+print(susan.fullName)
 
-mark.firstName = "Marky Mark"
-mark.lastName = "and the Funky Bunch"
+susan.firstName = "Siouxsie"
+susan.lastName = "and the Banshees"
 
-print(mark.fullName)
+print(susan.fullName)
 ```
 This will print:
 
 ```
-Mark Murray
-Marky Mark and the Funky Bunch
+Susan Lovaglio
+Siouxsie and the Banshees
 ```
-![](https://curriculum-content.s3.amazonaws.com/swift/swift-calculated-property/Wildside.jpg)
+![](https://s3.amazonaws.com/learn-verified/susan+calc+properties+image.jpg)
+
+<a href='https://en.wikipedia.org/wiki/Siouxsie_and_the_Banshees' data-visibility='hidden'>Siouxsie and the Banshees
 
 <a href='https://learn.co/lessons/swift-calculated-property' data-visibility='hidden'>View this lesson on Learn.co</a>
